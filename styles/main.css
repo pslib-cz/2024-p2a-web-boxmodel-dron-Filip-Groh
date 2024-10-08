@@ -37,6 +37,70 @@
 
 /* VRSTVA PRO VAŠE STYLY */
 @layer design {
+    figcaption {
+        text-align: center;
+    }
+
+    header {
+        position: relative;
+    }
+
+    .page__logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .page__box {
+        border: 0.25em solid var(--primary, cyan);
+        padding: 1em;
+    }
+
+    ul li::marker {
+        color: var(--primary, cyan);
+    }
+
+    .page__solid_box {
+        background-color: var(--gray, grey);
+        color: var(--light, white);
+    }
+
+    main {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .button__light {
+        background-color: var(--primary, cyan);
+        color: var(--light, white);
+        border-radius: 1em;
+        padding: 1em 2em;
+        text-decoration: none;
+    }
+
+    .button__light:hover {
+        background-color: var(--black, black);
+    }
+
+    .button__dark {
+        background-color: var(--light, white);
+        color: var(--text, black);
+        border-radius: 1em;
+        padding: 1em 2em;
+        text-decoration: none;
+    }
+
+    .button__dark:hover {
+        background-color: var(--black, black);
+        color: var(--light, white);
+    }
+
+    .card {
+        display: inline-block;
+        width: 20em;
+        vertical-align: top;
+    }
+
     picture img {
         display: block;
         max-width: 100%;
@@ -45,5 +109,11 @@
 
     footer {
         background-color: var(--gray, gray);
+        text-align: center;
+        padding: 2em; 
+    }
+
+    a {
+        text-decoration: none;
     }
 }

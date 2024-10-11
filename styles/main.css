@@ -10,6 +10,12 @@
         --black: #000000;
         --light: #FFFFFF;
         --gray: #3B3E40;
+
+        --h1-font-size: 72px;
+        --h2-font-size: 36px;
+        --h3-font-size: 20px;
+        --p-font-size: 16px;
+        --figure-caption-font-size: 14px;
     }
     html {
         font-family: "Open Sans", sans-serif;
@@ -37,23 +43,81 @@
 
 /* VRSTVA PRO VAŠE STYLY */
 @layer design {
+    h1 {
+        font-size: var(--h1-font-size);
+        margin-bottom: 0.25em;
+    }
+
+    h2 {
+        font-size: var(--h2-font-size);
+    }
+
+    h3 {
+        font-size: var(--h3-font-size);
+    }
+
+    p {
+        font-size: var(--p-font-size);
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
     figcaption {
+        font-size: var(--figure-caption-font-size);
+        margin-top: 1em;
+    }
+
+    .page__header {
+        color: var(--light, white);
+        background-image: url("../images/header-2560w.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top left;
+    }
+
+    figure {
+        margin-top: 2em;
+    }
+
+    figcaption {
+        text-align: center;
+        color: var(--gray, grey);
+    }
+
+    .page__intro {
+        padding: 4em;
+        margin-bottom: 4em;
+    }
+
+    .page__intro p {
+        padding-bottom: 4em;
+    }
+
+    .page__logo_div {
         text-align: center;
     }
 
-    header {
-        position: relative;
-    }
-
     .page__logo {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+        display: inline-block;
+        padding: 36px;
     }
 
     .page__box {
         border: 0.25em solid var(--primary, cyan);
-        padding: 1em;
+        padding: 36px;
+    }
+
+    .page__box p {
+        margin: 0;
+    }
+
+    .page__box h3 {
+        margin-top: 0;
+    }
+
+    ul li {
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
 
     ul li::marker {
@@ -63,6 +127,22 @@
     .page__solid_box {
         background-color: var(--gray, grey);
         color: var(--light, white);
+        padding: 4em;
+        text-align: center;
+    }
+
+    .page__solid_box h3 {
+        font-size: 3em;
+        margin-bottom: 0;
+    }
+
+    .bigger {
+        font-size: 2em;
+    }
+
+    .page__solid_box p {
+        font-size: var(--figure-caption-font-size);
+        margin-bottom: 3em;
     }
 
     main {
@@ -71,10 +151,11 @@
     }
 
     .button__light {
+        display: inline-block;
         background-color: var(--primary, cyan);
         color: var(--light, white);
         border-radius: 1em;
-        padding: 1em 2em;
+        padding: 12px 32px;
         text-decoration: none;
     }
 
@@ -86,7 +167,7 @@
         background-color: var(--light, white);
         color: var(--text, black);
         border-radius: 1em;
-        padding: 1em 2em;
+        padding: 12px 32px;
         text-decoration: none;
     }
 
@@ -101,6 +182,10 @@
         vertical-align: top;
     }
 
+    .card p {
+        padding-bottom: 0;
+    }
+
     picture img {
         display: block;
         max-width: 100%;
@@ -110,10 +195,41 @@
     footer {
         background-color: var(--gray, gray);
         text-align: center;
-        padding: 2em; 
+        padding: 1.5em; 
+        margin-top: 6em;
+    }
+
+    footer a {
+        color: var(--light, white);
     }
 
     a {
         text-decoration: none;
+    }
+
+    .img_full {
+       width: 100%;
+    }
+
+    .img_half {
+        box-sizing: border-box;
+        width: 50%;
+        padding-top: 1rem;
+        display: inline-block;
+        vertical-align: top;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+    }
+
+    .img_half:nth-child(odd) {
+        padding-right: 0.5rem;
+    }
+
+    .img_half:nth-child(even) {
+        padding-left: 0.5rem;
+    }
+
+    .page__galery {
+        font-size: 0;
     }
 }

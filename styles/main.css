@@ -54,12 +54,14 @@
 
     h3 {
         font-size: var(--h3-font-size);
+        margin-top: 3em;
     }
 
     p {
         font-size: var(--p-font-size);
         margin-top: 2em;
         margin-bottom: 2em;
+        line-height: 1.5;
     }
 
     figcaption {
@@ -73,10 +75,11 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top left;
+        height: min(100vh, 800px);
     }
 
     figure {
-        margin-top: 2em;
+        margin: 2em 0;
     }
 
     figcaption {
@@ -85,21 +88,24 @@
     }
 
     .page__intro {
-        padding: 4em;
-        margin-bottom: 4em;
+        padding: 8vw;
+        margin-bottom: min(2em, 5vw);
+        max-height: 100vw;
     }
 
     .page__intro p {
-        padding-bottom: 4em;
+        max-width: 48em;
     }
 
     .page__logo_div {
         text-align: center;
+        height: min(20vw, 200px);
     }
 
     .page__logo {
         display: inline-block;
         padding: 36px;
+        scale: 2;
     }
 
     .page__box {
@@ -127,13 +133,15 @@
     .page__solid_box {
         background-color: var(--gray, grey);
         color: var(--light, white);
-        padding: 4em;
+        padding: 0.25em 1em 2.5em;
         text-align: center;
+        margin-top: 2em;
     }
 
     .page__solid_box h3 {
         font-size: 3em;
         margin-bottom: 0;
+        margin-top: 1em;
     }
 
     .bigger {
@@ -143,10 +151,11 @@
     .page__solid_box p {
         font-size: var(--figure-caption-font-size);
         margin-bottom: 3em;
+        margin-top: 1em;
     }
 
     main {
-        width: 50%;
+        width: min(90vw, 1000px);
         margin: 0 auto;
     }
 
@@ -154,9 +163,10 @@
         display: inline-block;
         background-color: var(--primary, cyan);
         color: var(--light, white);
-        border-radius: 1em;
+        border-radius: 0.5em;
         padding: 12px 32px;
         text-decoration: none;
+        font-weight: bold;
     }
 
     .button__light:hover {
@@ -166,9 +176,10 @@
     .button__dark {
         background-color: var(--light, white);
         color: var(--text, black);
-        border-radius: 1em;
+        border-radius: 0.5em;
         padding: 12px 32px;
         text-decoration: none;
+        font-weight: bold;
     }
 
     .button__dark:hover {
@@ -180,6 +191,19 @@
         display: inline-block;
         width: 20em;
         vertical-align: top;
+        margin-right: 1em;
+        margin-left: 1em;
+        margin-bottom: 2em;
+    }
+
+    .card:first-child {
+        margin-right: 1em;
+        margin-left: 0em;
+    }
+
+    .card:last-child {
+        margin-left: 1em;
+        margin-right: 0em;
     }
 
     .card p {

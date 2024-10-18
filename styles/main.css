@@ -231,32 +231,6 @@
         text-decoration: none;
     }
 
-    /* .img_full {
-       width: 100%;
-    }
-
-    .img_half {
-        box-sizing: border-box;
-        width: min(50%, 100vw);
-        padding-top: 1rem;
-        display: inline-block;
-        vertical-align: top;
-        aspect-ratio: 16/9;
-        object-fit: cover;
-    }
-
-    .img_half:nth-child(odd) {
-        padding-right: 0.5rem;
-    }
-
-    .img_half:nth-child(even) {
-        padding-left: 0.5rem;
-    }
-
-    .page__galery {
-        font-size: 0;
-    } */
-
     .img {
         box-sizing: border-box;
         display: inline-block;

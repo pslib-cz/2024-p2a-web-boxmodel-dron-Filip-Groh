@@ -1,34 +1,37 @@
 @layer box {
-    .page__box {
-        border: 0.25em solid var(--primary, cyan);
-        padding: 36px;
+    .box {
+        padding: 2.25rem;
     }
 
-    .page__box p {
+    .box__outline {
+        border: 0.25em solid var(--primary, cyan);
+    }
+
+    .box__outline p {
         margin: 0;
     }
 
-    .page__box h3 {
+    .box__outline h3 {
         margin-top: 0;
     }
 
-    .page__solid_box {
+    .box__solid {
         background-color: var(--gray, grey);
         color: var(--light, white);
-        padding: 0.25em 1em 2.5em;
         text-align: center;
         margin-top: 2em;
+        padding-bottom: 4rem;
     }
 
-    .page__solid_box h3 {
+    .box__solid h3 {
         font-size: 3em;
         margin-bottom: 0;
-        margin-top: 1em;
+        margin-top: 0.5em;
     }
 
-    .page__solid_box p {
+    .box__solid p {
         font-size: var(--figure-caption-font-size);
-        margin-bottom: 3em;
+        margin-bottom: 1.5em;
         margin-top: 1em;
     }
 

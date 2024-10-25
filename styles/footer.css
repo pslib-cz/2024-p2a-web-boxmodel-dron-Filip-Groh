@@ -1,0 +1,12 @@
+@layer footer {
+    footer {
+        background-color: var(--gray, gray);
+        text-align: center;
+        padding: 1.5em; 
+        margin-top: 6em;
+    }
+
+    footer a {
+        color: var(--light, white);
+    }
+}

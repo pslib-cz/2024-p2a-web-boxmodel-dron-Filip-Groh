@@ -1,0 +1,31 @@
+@layer header {
+    .page__intro {
+        padding: 8vw;
+        margin-bottom: min(2em, 5vw);
+        max-height: 100vw;
+    }
+
+    .page__intro p {
+        max-width: 48em;
+    }
+
+    .page__logo_div {
+        text-align: center;
+        height: min(20vw, 200px);
+    }
+
+    .page__logo {
+        display: inline-block;
+        padding: 36px;
+        scale: 2;
+    }
+
+    .page__header {
+        color: var(--light, white);
+        background-image: url("../images/header-2560w.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top left;
+        height: min(100vh, 800px);
+    }
+}

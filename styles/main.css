@@ -3,6 +3,14 @@
 @import url(normalize.css) layer(reset);
 @import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap) layer(init);
 
+@import url(button.css) layer(button);
+@import url(footer.css) layer(footer);
+@import url(gallery.css) layer(gallery);
+@import url(card.css) layer(card);
+@import url(header.css) layer(header);
+@import url(figure.css) layer(figure);
+@import url(box.css) layer(box);
+
 @layer init {
     :root {
         --primary: #66d4d4;
@@ -64,60 +72,6 @@
         line-height: 1.5;
     }
 
-    figcaption {
-        font-size: var(--figure-caption-font-size);
-        margin-top: 1em;
-        text-align: center;
-        color: var(--gray, grey);
-    }
-
-    .page__header {
-        color: var(--light, white);
-        background-image: url("../images/header-2560w.webp");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top left;
-        height: min(100vh, 800px);
-    }
-
-    figure {
-        margin: 2em 0;
-    }
-
-    .page__intro {
-        padding: 8vw;
-        margin-bottom: min(2em, 5vw);
-        max-height: 100vw;
-    }
-
-    .page__intro p {
-        max-width: 48em;
-    }
-
-    .page__logo_div {
-        text-align: center;
-        height: min(20vw, 200px);
-    }
-
-    .page__logo {
-        display: inline-block;
-        padding: 36px;
-        scale: 2;
-    }
-
-    .page__box {
-        border: 0.25em solid var(--primary, cyan);
-        padding: 36px;
-    }
-
-    .page__box p {
-        margin: 0;
-    }
-
-    .page__box h3 {
-        margin-top: 0;
-    }
-
     ul li {
         margin-top: 1em;
         margin-bottom: 1em;
@@ -127,89 +81,9 @@
         color: var(--primary, cyan);
     }
 
-    .page__solid_box {
-        background-color: var(--gray, grey);
-        color: var(--light, white);
-        padding: 0.25em 1em 2.5em;
-        text-align: center;
-        margin-top: 2em;
-    }
-
-    .page__solid_box h3 {
-        font-size: 3em;
-        margin-bottom: 0;
-        margin-top: 1em;
-    }
-
-    .bigger {
-        font-size: 2em;
-    }
-
-    .page__solid_box p {
-        font-size: var(--figure-caption-font-size);
-        margin-bottom: 3em;
-        margin-top: 1em;
-    }
-
     main {
         width: min(90vw, 1000px);
         margin: 0 auto;
-    }
-
-    .button__light {
-        display: inline-block;
-        background-color: var(--primary, cyan);
-        color: var(--light, white);
-        border-radius: 0.5em;
-        padding: 12px 32px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    .button__light:hover {
-        background-color: var(--black, black);
-    }
-
-    .button__dark {
-        background-color: var(--light, white);
-        color: var(--text, black);
-        border-radius: 0.5em;
-        padding: 12px 32px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    .button__dark:hover {
-        background-color: var(--black, black);
-        color: var(--light, white);
-    }
-
-    .card {
-        display: inline-block;
-        width: 20em;
-        vertical-align: top;
-        margin-right: calc(1em - clamp(0px, calc((1000px / 2 - 50%) * 100), 1em));
-        margin-left: calc(1em - clamp(0px, calc((1000px / 2 - 50%) * 100), 1em));
-        margin-bottom: 2em;
-    }
-
-    .card:first-child {
-        margin-right: calc(1em - clamp(0px, calc((1000px / 2 - 50%) * 100), 1em));
-        margin-left: 0em;
-    }
-
-    .card:last-child {
-        margin-left: calc(1em - clamp(0px, calc((1000px / 2 - 50%) * 100), 1em));
-        margin-right: 0em;
-    }
-
-    .card p {
-        padding-bottom: 0;
-    }
-
-    .card img {
-        aspect-ratio: 16/9;
-        width: 100%;
     }
 
     picture img {
@@ -218,48 +92,7 @@
         height: auto;
     }
 
-    footer {
-        background-color: var(--gray, gray);
-        text-align: center;
-        padding: 1.5em; 
-        margin-top: 6em;
-    }
-
-    footer a {
-        color: var(--light, white);
-    }
-
     a {
         text-decoration: none;
-    }
-
-    .img {
-        box-sizing: border-box;
-        display: inline-block;
-        vertical-align: top;
-        aspect-ratio: 16/9;
-        object-fit: cover;
-        max-width: 100%;
-    }
-
-    .img_full {
-        width: 100%;
-     }
- 
-    .img_half {
-        margin-top: 1rem;
-        width: clamp(50%, calc((1000px / 2 - 50%) * 100), 100%);
-    }
- 
-    a:nth-child(odd) .img_half {
-        padding-right: calc(0.5rem - clamp(0px, calc((1000px / 2 - 50%) * 100), 0.5rem));
-    }
-
-    a:nth-child(even) .img_half {
-        padding-left: calc(0.5rem - clamp(0px, calc((1000px / 2 - 50%) * 100), 0.5rem));
-    }
- 
-    .page__galery {
-        font-size: 0;
     }
 }

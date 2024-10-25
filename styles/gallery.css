@@ -1,0 +1,31 @@
+@layer gallery {
+    .img {
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: top;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        max-width: 100%;
+    }
+
+    .img_full {
+        width: 100%;
+     }
+ 
+    .img_half {
+        margin-top: 1rem;
+        width: clamp(50%, calc((1000px / 2 - 50%) * 100), 100%);
+    }
+ 
+    a:nth-child(even) .img_half {
+        padding-right: calc(0.5rem - clamp(0px, calc((1000px / 2 - 50%) * 100), 0.5rem));
+    }
+
+    a:nth-child(odd) .img_half {
+        padding-left: calc(0.5rem - clamp(0px, calc((1000px / 2 - 50%) * 100), 0.5rem));
+    }
+ 
+    .page__galery {
+        font-size: 0;
+    }
+}

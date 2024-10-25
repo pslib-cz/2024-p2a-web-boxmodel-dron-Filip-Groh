@@ -1,0 +1,29 @@
+@layer card {
+    .card {
+        display: inline-block;
+        width: 20em;
+        vertical-align: top;
+        margin-right: calc(1em - clamp(0px, calc((1000px / 2 - 50%) * 100), 1em));
+        margin-left: calc(1em - clamp(0px, calc((1000px / 2 - 50%) * 100), 1em));
+        margin-bottom: 2em;
+    }
+
+    .card:first-child {
+        margin-right: calc(1em - clamp(0px, calc((1000px / 2 - 50%) * 100), 1em));
+        margin-left: 0em;
+    }
+
+    .card:last-child {
+        margin-left: calc(1em - clamp(0px, calc((1000px / 2 - 50%) * 100), 1em));
+        margin-right: 0em;
+    }
+
+    .card p {
+        padding-bottom: 0;
+    }
+
+    .card img {
+        aspect-ratio: 16/9;
+        width: 100%;
+    }
+}

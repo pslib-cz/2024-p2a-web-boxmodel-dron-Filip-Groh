@@ -1,0 +1,12 @@
+@layer {
+    figcaption {
+        font-size: var(--figure-caption-font-size);
+        margin-top: 1em;
+        text-align: center;
+        color: var(--gray, grey);
+    }
+
+    figure {
+        margin: 2em 0;
+    }
+}
